@@ -7,7 +7,7 @@ pipeline {
                 sh 'docker build -t rohit630/service:v1 .'
             }
         }
-        stage('Push') {
+        stage('Push Docker Image') {
             steps {
                 script {
                     // This step should not normally be used in your script. Consult the inline help for details.
